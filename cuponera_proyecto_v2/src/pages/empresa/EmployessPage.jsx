@@ -1,5 +1,5 @@
 import React from "react";
-import { useEmployees } from "../../../context/employeesContext";
+import { useEmployees } from "../../context/employeesContext.jsx";
 
 
 const EmployeesPage = () => {

@@ -2,6 +2,7 @@ import { createContext, useState, useContext } from "react";
 
 const OffersContext = createContext();
 
+// eslint-disable-next-line react/prop-types
 export const OffersProvider = ({ children }) => {
     const [offers, setOffers] = useState([]);
 

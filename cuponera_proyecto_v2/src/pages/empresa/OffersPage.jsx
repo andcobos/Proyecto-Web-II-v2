@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { useOffers } from "../../../context/offersContext";
-import OfferCard from "./OfferCard";
+import { useOffers } from "../../context/offersContext";
+import OfferCard from "../../components/OfferCard";
 
 const OffersPage = () => {
   const { offers = [] } = useOffers(); 

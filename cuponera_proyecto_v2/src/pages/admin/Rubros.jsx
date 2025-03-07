@@ -1,6 +1,6 @@
 //vista de Rubros del Admin
 import { useContext, useState } from "react";
-import { AdminContext } from "../../context/AdminContext";
+import { AdminContext } from "../../context/AdminContext.jsx";
 
 function Rubros() {
   const { rubros, addRubro, updateRubro, deleteRubro } = useContext(AdminContext);

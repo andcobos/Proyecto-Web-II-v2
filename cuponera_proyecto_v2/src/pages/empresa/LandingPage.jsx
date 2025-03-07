@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useEmployees } from "../../../context/employeesContext";
-import { useOffers } from "../../../context/offersContext";
-import CreateEmployee from "./CreateEmployee";
-import CreateOffer from "./CreateOffer";
+
+import CreateEmployee from "./CreateEmployee.jsx";
+import {useOffers} from "../../context/offersContext.jsx";
+import {useEmployees} from "../../context/employeesContext.jsx";
 
 const LandingPage = () => {
     const { addEmployee } = useEmployees();
@@ -56,10 +56,10 @@ const LandingPage = () => {
                             className="absolute top-2 right-2 text-gray-600"
                             onClick={() => setShowOfferModal(false)}
                         >✖</button>
-                        <CreateOffer
+
                             closeModal={() => setShowOfferModal(false)}
                             addOffer={addOffer}
-                        />
+
                     </div>
                 </div>
             )}
